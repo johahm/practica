@@ -1,0 +1,90 @@
+
+body { 
+    /*background-image: radial-gradient(circle at -19.24% 50%, #d6793a 0, #f9c8b1 10%, #6c96f0 20%, #f5a999 30%, #df6f2f 40%, #eb8888 50%, #ee919b 60%, #e9869b 70%, #e37c9d 80%, #db75a1 90%, #c44f91 100%);*/
+    text-align: center;
+    background-image: url(fondo.jpg);
+   /* background-repeat: no-repeat;*/
+    background-position: center center; /*centrar la imagen*/
+   /* background-attachment: fixed; /*imagen fija en una sola posicion*/
+    background-size: cover; /*sombreado en la imagen*/
+    
+  
+  
+  
+}
+
+html, section {
+    height: 100%;
+
+}
+
+
+button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 18%;
+    background: transparent;
+    color: rgb(8, 8, 8);
+
+}
+
+button:hover {
+    background-color:#2617f5; /* Orange */
+}
+
+span{
+    font-size: 300%;
+    animation: saltar 2s infinite; /*animacion infinita*/
+    display: inline-block; /*porque estan las letras dentro de un span, lo cual no tienen margen ni nada, se convierte en elemento solido*/
+    transform: translateY(0);
+    color: rgb(241, 81, 7);
+      
+}
+  span:nth-child(1){ /*nth para que salte cada letra */
+  animation-delay: 0;  
+  }
+
+  span:nth-child(2){
+    animation-delay: 0.2s;  
+  }
+
+  span:nth-child(3){
+    animation-delay: 0.3s;  
+  }
+
+  span:nth-child(4){
+    animation-delay: 0.4s;  
+  }
+
+  span:nth-child(5){
+    animation-delay: 0.5s;  
+  }
+
+  span:nth-child(6){
+    animation-delay: 0.6s;  
+  }
+
+  span:nth-child(7){
+    animation-delay: 0.7s;  
+  }
+
+  span:nth-child(8){
+    animation-delay: 0.9s;  
+  }
+
+@keyframes saltar {/* donde se configura la animacion, con inicio y fin*/
+  0% {
+transform: translateY(0);
+  }
+  30% { /* porcentajes para que salte de arriba a abajo*/
+transform: translateY(30px);
+  }
+}
+textarea{
+  background-color: rgb(2, 8, 32);
+  color: rgb(241, 239, 239);
+  font-weight: bold;
+  font-size: 13px;
+  border-color: rgb(0, 0, 0);
+  border-radius: 5%;
+}
